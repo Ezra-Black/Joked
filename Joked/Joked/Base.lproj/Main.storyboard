@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Joked" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dh0-S8-qv6">
+                                <rect key="frame" x="302" y="44" width="92" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Aty-jZ-aWA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="MPs-Eu-FA7"/>
+                                </constraints>
+                                <state key="normal" title="Favorites"/>
+                                <connections>
+                                    <action selector="favButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wcj-ML-9eI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvQ-rw-Kn2">
+                                <rect key="frame" x="20" y="193" width="374" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="eP5-EC-TdY"/>
+                                    <constraint firstAttribute="height" constant="256" id="hfl-uj-a8X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwZ-Hs-LPh">
+                                <rect key="frame" x="20" y="520" width="374" height="235"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="IMJ-gd-Lhv"/>
+                                    <constraint firstAttribute="height" constant="235" id="Rbm-tS-ZMg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSa-zo-ofC">
+                                <rect key="frame" x="94" y="806" width="227" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="766-eR-GBd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="227" id="BbN-Sd-s4C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="30"/>
+                                <state key="normal" title="Next Joke"/>
+                                <connections>
+                                    <action selector="nextJokeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oaB-d5-AhB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2c-HP-yDc">
+                                <rect key="frame" x="20" y="44" width="86" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="eD3-nn-yOI"/>
+                                    <constraint firstAttribute="width" constant="86" id="wGU-HN-ziy"/>
+                                </constraints>
+                                <state key="normal" image="star" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
+                                </state>
+                                <connections>
+                                    <action selector="favJokeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jyv-X1-joj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LwZ-Hs-LPh" firstAttribute="top" secondItem="wvQ-rw-Kn2" secondAttribute="bottom" constant="71" id="0OU-hf-bvo"/>
+                            <constraint firstItem="gSa-zo-ofC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="3Ec-bl-raD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LwZ-Hs-LPh" secondAttribute="trailing" constant="20" id="JQt-qg-wAp"/>
+                            <constraint firstItem="wvQ-rw-Kn2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="M1K-MV-8lW"/>
+                            <constraint firstItem="wvQ-rw-Kn2" firstAttribute="top" secondItem="m2c-HP-yDc" secondAttribute="bottom" constant="66" id="NKb-3y-0SL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gSa-zo-ofC" secondAttribute="trailing" constant="93" id="X6g-8t-Y9E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dh0-S8-qv6" secondAttribute="trailing" constant="20" id="YlW-uX-A2U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wvQ-rw-Kn2" secondAttribute="trailing" constant="20" id="aRJ-aL-Rxa"/>
+                            <constraint firstItem="LwZ-Hs-LPh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aSo-5d-QYC"/>
+                            <constraint firstItem="m2c-HP-yDc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dKR-fG-Jms"/>
+                            <constraint firstItem="gSa-zo-ofC" firstAttribute="top" secondItem="LwZ-Hs-LPh" secondAttribute="bottom" constant="51" id="srN-ec-uEg"/>
+                            <constraint firstItem="m2c-HP-yDc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uWC-iq-QU6"/>
+                            <constraint firstItem="gSa-zo-ofC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="vxJ-Yo-f4l"/>
+                            <constraint firstItem="dh0-S8-qv6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zhR-fM-qdN"/>
+                            <constraint firstItem="dh0-S8-qv6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="302" id="zhX-wD-4bm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="JokeViewLabel" destination="LwZ-Hs-LPh" id="UmH-Fo-ryI"/>
+                        <outlet property="punchlineLabel" destination="wvQ-rw-Kn2" id="3LE-YG-38t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
+    </resources>
+</document>
