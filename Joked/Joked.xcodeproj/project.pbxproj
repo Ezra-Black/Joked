@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E805E85251E5F5D0079A7D9 /* FirebaseNetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E805E84251E5F5D0079A7D9 /* FirebaseNetworkingController.swift */; };
 		0E805E88251E602E0079A7D9 /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E805E87251E602E0079A7D9 /* Groups.swift */; };
+		7F7A9538251E7084007962F1 /* SubmitAJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7A9537251E7084007962F1 /* SubmitAJokeViewController.swift */; };
 		7FD52AB624E7867300A83E7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD52AB524E7867300A83E7E /* AppDelegate.swift */; };
 		7FD52AB824E7867300A83E7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD52AB724E7867300A83E7E /* SceneDelegate.swift */; };
 		7FD52ABA24E7867300A83E7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD52AB924E7867300A83E7E /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		0E805E84251E5F5D0079A7D9 /* FirebaseNetworkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseNetworkingController.swift; sourceTree = "<group>"; };
 		0E805E87251E602E0079A7D9 /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
+		7F7A9537251E7084007962F1 /* SubmitAJokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitAJokeViewController.swift; sourceTree = "<group>"; };
 		7FD52AB224E7867300A83E7E /* Joked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joked.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD52AB524E7867300A83E7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FD52AB724E7867300A83E7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				7FD52ABE24E7867600A83E7E /* Assets.xcassets */,
 				7FD52AC024E7867600A83E7E /* LaunchScreen.storyboard */,
 				7FD52AC324E7867600A83E7E /* Info.plist */,
+				7F7A9537251E7084007962F1 /* SubmitAJokeViewController.swift */,
 			);
 			path = Joked;
 			sourceTree = "<group>";
@@ -122,7 +125,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Casanova Studios";
 				TargetAttributes = {
 					7FD52AB124E7867300A83E7E = {
@@ -173,6 +176,7 @@
 				7FD52ACB24E7889B00A83E7E /* JokeNetworkingController.swift in Sources */,
 				7FD52AB824E7867300A83E7E /* SceneDelegate.swift in Sources */,
 				0E805E88251E602E0079A7D9 /* Groups.swift in Sources */,
+				7F7A9538251E7084007962F1 /* SubmitAJokeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +228,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -284,6 +289,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
