@@ -8,6 +8,8 @@
 
 import Foundation
 
+#warning("networking call to retrieve jokes")
+
 enum HTTPMethod: String {
     case get = "GET"
     case post = "POST"
