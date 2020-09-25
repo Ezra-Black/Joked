@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E805E85251E5F5D0079A7D9 /* FirebaseNetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E805E84251E5F5D0079A7D9 /* FirebaseNetworkingController.swift */; };
+		0E805E88251E602E0079A7D9 /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E805E87251E602E0079A7D9 /* Groups.swift */; };
 		7FD52AB624E7867300A83E7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD52AB524E7867300A83E7E /* AppDelegate.swift */; };
 		7FD52AB824E7867300A83E7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD52AB724E7867300A83E7E /* SceneDelegate.swift */; };
 		7FD52ABA24E7867300A83E7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD52AB924E7867300A83E7E /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E805E84251E5F5D0079A7D9 /* FirebaseNetworkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseNetworkingController.swift; sourceTree = "<group>"; };
+		0E805E87251E602E0079A7D9 /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
 		7FD52AB224E7867300A83E7E /* Joked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joked.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD52AB524E7867300A83E7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FD52AB724E7867300A83E7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				7FD52ACA24E7889B00A83E7E /* JokeNetworkingController.swift */,
+				0E805E84251E5F5D0079A7D9 /* FirebaseNetworkingController.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -85,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				7FD52ACD24E78C8900A83E7E /* JokeModel.swift */,
+				0E805E87251E602E0079A7D9 /* Groups.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -162,9 +168,11 @@
 			files = (
 				7FD52ABA24E7867300A83E7E /* ViewController.swift in Sources */,
 				7FD52AB624E7867300A83E7E /* AppDelegate.swift in Sources */,
+				0E805E85251E5F5D0079A7D9 /* FirebaseNetworkingController.swift in Sources */,
 				7FD52ACE24E78C8900A83E7E /* JokeModel.swift in Sources */,
 				7FD52ACB24E7889B00A83E7E /* JokeNetworkingController.swift in Sources */,
 				7FD52AB824E7867300A83E7E /* SceneDelegate.swift in Sources */,
+				0E805E88251E602E0079A7D9 /* Groups.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
