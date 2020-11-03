@@ -16,6 +16,7 @@ class SubmitAJokeViewController: UIViewController, UIPickerViewDelegate, UIPicke
     @IBOutlet weak var typePicker: UIPickerView!
     
     var pickerData: [String] = [String]()
+    var controller = NetworkController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +59,9 @@ class SubmitAJokeViewController: UIViewController, UIPickerViewDelegate, UIPicke
     @IBAction func submitButtonPressed(_ sender: Any) {
         showAlert()
         #warning("SEND firebase joke to database!")
+        controller.createJoke(with: jokeTextField.text ?? "", punchline: punchlineTextField.text ?? "") {
+            print("Success")
+        }
     }
     
     func showAlert(){
