@@ -23,13 +23,11 @@ class NetworkController {
         jokeRef = ref.child("jokes")
     }
     
-    
-    
     func createJoke(with setup: String, punchline: String, completion: @escaping () -> Void) {
             let newJoke = Joke(id: 1, type: "general", setup: setup, punchline: punchline)
-            
-        jokeRef.child((newJoke.setup)).setValue(newJoke.toDictionary())
+
+        jokeRef.child(("Joke")).setValue(newJoke.setup)
             completion()
+        jokeRef.child(("Punchline")).setValue(newJoke.punchline)
         }
-    
 }
