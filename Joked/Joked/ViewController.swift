@@ -35,6 +35,8 @@ class ViewController: UIViewController, UITextViewDelegate {
             DispatchQueue.main.async {
                 let joke = self.networkingController.joke[0].setup
                 let punchline = self.networkingController.joke[0].punchline
+                self.JokeViewLabel.fadeTransition(0.7)
+                self.punchlineLabel.fadeTransition(0.7)
                 self.JokeViewLabel.text = "\(punchline)"
                 self.punchlineLabel.text = "\(joke)"
             }
