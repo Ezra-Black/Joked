@@ -45,7 +45,10 @@ class ViewController: UIViewController, UITextViewDelegate {
     }
     @IBAction func favJokeButtonTapped(_ sender: Any) {
     }
-    @IBAction func nextJokeTapped(_ sender: Any) {
+    @IBAction func nextJokeTapped(_ sender: UIButton) {
+        DispatchQueue.main.async {
+            sender.pulsate()
+        }
         updateLabels()
     }
     

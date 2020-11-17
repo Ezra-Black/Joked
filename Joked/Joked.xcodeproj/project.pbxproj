@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E805E85251E5F5D0079A7D9 /* FirebaseNetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E805E84251E5F5D0079A7D9 /* FirebaseNetworkingController.swift */; };
 		0E805E88251E602E0079A7D9 /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E805E87251E602E0079A7D9 /* Groups.swift */; };
+		7F02C72625643C4B00D73F5C /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F02C72525643C4B00D73F5C /* UIButton+Extensions.swift */; };
 		7F7A9538251E7084007962F1 /* SubmitAJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7A9537251E7084007962F1 /* SubmitAJokeViewController.swift */; };
 		7F8CD25C2551EF8F00C9FA85 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F8CD25B2551EF8F00C9FA85 /* GoogleService-Info.plist */; };
 		7FD52AB624E7867300A83E7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD52AB524E7867300A83E7E /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		0E805E84251E5F5D0079A7D9 /* FirebaseNetworkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseNetworkingController.swift; sourceTree = "<group>"; };
 		0E805E87251E602E0079A7D9 /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
 		571D59AD9E660389DB6DBEAD /* Pods-Joked.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joked.debug.xcconfig"; path = "Target Support Files/Pods-Joked/Pods-Joked.debug.xcconfig"; sourceTree = "<group>"; };
+		7F02C72525643C4B00D73F5C /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		7F7A9537251E7084007962F1 /* SubmitAJokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitAJokeViewController.swift; sourceTree = "<group>"; };
 		7F8CD25B2551EF8F00C9FA85 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7FD52AB224E7867300A83E7E /* Joked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joked.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 				7FD52AC324E7867600A83E7E /* Info.plist */,
 				7F8CD25B2551EF8F00C9FA85 /* GoogleService-Info.plist */,
 				7F7A9537251E7084007962F1 /* SubmitAJokeViewController.swift */,
+				7F02C72525643C4B00D73F5C /* UIButton+Extensions.swift */,
 			);
 			path = Joked;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				7FD52AB624E7867300A83E7E /* AppDelegate.swift in Sources */,
 				0E805E85251E5F5D0079A7D9 /* FirebaseNetworkingController.swift in Sources */,
 				7FD52ACE24E78C8900A83E7E /* JokeModel.swift in Sources */,
+				7F02C72625643C4B00D73F5C /* UIButton+Extensions.swift in Sources */,
 				7FD52ACB24E7889B00A83E7E /* JokeNetworkingController.swift in Sources */,
 				7FD52AB824E7867300A83E7E /* SceneDelegate.swift in Sources */,
 				0E805E88251E602E0079A7D9 /* Groups.swift in Sources */,
