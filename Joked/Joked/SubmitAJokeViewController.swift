@@ -13,15 +13,12 @@ class SubmitAJokeViewController: UIViewController, UIPickerViewDelegate, UIPicke
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var jokeTextField: UITextField!
     @IBOutlet weak var punchlineTextField: UITextField!
-    @IBOutlet weak var typePicker: UIPickerView!
     
     var pickerData: [String] = [String]()
     var controller = NetworkController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.typePicker.delegate = self
-        self.typePicker.dataSource = self
         pickerData = ["general", "programming"]
         // Do any additional setup after loading the view.
     }
