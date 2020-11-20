@@ -10,13 +10,24 @@ import Foundation
 import UIKit
 
 
+
 extension UIView {
     func fadeTransition(_ duration:CFTimeInterval) {
         let animation = CATransition()
         animation.timingFunction = CAMediaTimingFunction(name:
-            CAMediaTimingFunctionName.easeInEaseOut)
+                                                            CAMediaTimingFunctionName.linear)
         animation.type = CATransitionType.push
         animation.duration = duration
-        layer.add(animation, forKey: CATransitionType.fade.rawValue)
+        layer.add(animation, forKey: CATransitionType.push.rawValue)
+    }
+}
+
+extension UIView {
+        func moveInTransition(_ duration:CFTimeInterval) {
+        let animation = CATransition()
+            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.default)
+        animation.type = .moveIn
+        animation.duration = duration
+            layer.add(animation, forKey: CATransitionType.moveIn.rawValue)
     }
 }
