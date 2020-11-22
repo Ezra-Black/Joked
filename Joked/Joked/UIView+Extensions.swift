@@ -14,8 +14,7 @@ import UIKit
 extension UIView {
     func fadeTransition(_ duration:CFTimeInterval) {
         let animation = CATransition()
-        animation.timingFunction = CAMediaTimingFunction(name:
-                                                            CAMediaTimingFunctionName.linear)
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
         animation.type = CATransitionType.push
         animation.duration = duration
         layer.add(animation, forKey: CATransitionType.push.rawValue)
