@@ -25,8 +25,8 @@ extension UIView {
         func moveInTransition(_ duration:CFTimeInterval) {
         let animation = CATransition()
             animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.default)
-        animation.type = .moveIn
+            animation.type = .push
         animation.duration = duration
-            layer.add(animation, forKey: CATransitionType.moveIn.rawValue)
+            layer.add(animation, forKey: CATransitionType.push.rawValue)
     }
 }

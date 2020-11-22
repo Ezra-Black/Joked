@@ -35,7 +35,6 @@ class ViewController: UIViewController, UITextViewDelegate {
                 self.punchlineLabel.text = "\(joke)"
             }
         }
-        
     }
     
     func updateLabels() {
@@ -43,8 +42,8 @@ class ViewController: UIViewController, UITextViewDelegate {
             DispatchQueue.main.async {
                 let joke = self.networkingController.joke[0].setup
                 let punchline = self.networkingController.joke[0].punchline
-                self.JokeViewLabel.fadeTransition(0.7)
-                self.punchlineLabel.fadeTransition(0.7)
+//                self.JokeViewLabel.fadeTransition(0.7)
+//                self.punchlineLabel.fadeTransition(0.7)
                 self.JokeViewLabel.moveInTransition(0.7)
                 self.punchlineLabel.moveInTransition(0.7)
                 self.JokeViewLabel.text = "\(punchline)"
