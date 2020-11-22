@@ -39,12 +39,15 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSa-zo-ofC">
                                 <rect key="frame" x="94" y="806" width="227" height="56"/>
+                                <color key="backgroundColor" name="unemphasizedSelectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="766-eR-GBd"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="227" id="BbN-Sd-s4C"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="30"/>
-                                <state key="normal" title="Next Joke"/>
+                                <state key="normal" title="Next Joke">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="nextJokeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oaB-d5-AhB"/>
                                 </connections>
@@ -53,7 +56,9 @@
                                 <rect key="frame" x="342" y="44" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="52"/>
-                                <state key="normal" title="+"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="9mW-mc-bug" kind="popoverPresentation" popoverAnchorView="bGC-bn-mrZ" id="7Ys-EE-DGP">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -62,7 +67,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="LwZ-Hs-LPh" firstAttribute="top" secondItem="wvQ-rw-Kn2" secondAttribute="bottom" constant="71" id="0OU-hf-bvo"/>
                             <constraint firstItem="gSa-zo-ofC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="3Ec-bl-raD"/>
@@ -77,6 +82,7 @@
                     </view>
                     <connections>
                         <outlet property="JokeViewLabel" destination="LwZ-Hs-LPh" id="UmH-Fo-ryI"/>
+                        <outlet property="nextJokeButton" destination="gSa-zo-ofC" id="zkh-xC-Js9"/>
                         <outlet property="punchlineLabel" destination="wvQ-rw-Kn2" id="3LE-YG-38t"/>
                     </connections>
                 </viewController>
@@ -95,22 +101,26 @@
                             <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have A Funny Dad Joke?" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfY-MG-9xw">
                                 <rect key="frame" x="20" y="20" width="374" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2K-Wa-ueo">
                                 <rect key="frame" x="158" y="731" width="98" height="56"/>
+                                <color key="backgroundColor" name="unemphasizedSelectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="G2E-lb-IXY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="30"/>
-                                <state key="normal" title="Submit!"/>
+                                <state key="normal" title="Submit!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="submitButtonPressed:" destination="9mW-mc-bug" eventType="touchUpInside" id="1AX-le-7Mc"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="punchline:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5cS-0L-lTI">
                                 <rect key="frame" x="20" y="404" width="374" height="34"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="QTT-n4-pQh"/>
                                 </constraints>
@@ -119,6 +129,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="setup:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L6F-SO-DDV">
                                 <rect key="frame" x="20" y="311" width="374" height="34"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="srR-i2-8sl"/>
                                 </constraints>
@@ -127,7 +138,7 @@
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UrQ-bL-EQo"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="L6F-SO-DDV" firstAttribute="leading" secondItem="5cS-0L-lTI" secondAttribute="leading" id="2vI-Ne-01i"/>
                             <constraint firstItem="UrQ-bL-EQo" firstAttribute="bottom" secondItem="P2K-Wa-ueo" secondAttribute="bottom" constant="21" id="5xo-yw-4lY"/>
@@ -154,8 +165,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
