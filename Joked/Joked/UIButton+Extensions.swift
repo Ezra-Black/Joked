@@ -32,5 +32,12 @@ extension UIButton {
     flash.repeatCount = 2
     layer.add(flash, forKey: nil)
     }
+    func move(x: Int, y: Int) {
+        let move = CABasicAnimation(keyPath: "position")
+        move.duration = 10
+        move.fromValue = [94, 806 ]
+        move.toValue = [x, y]
+        layer.add(move, forKey: nil)
+    }
 
 }
