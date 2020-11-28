@@ -17,33 +17,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvQ-rw-Kn2">
-                                <rect key="frame" x="20" y="193" width="374" height="256"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="abn-Pb-Jkp">
+                                <rect key="frame" x="20" y="193" width="374" height="562"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvQ-rw-Kn2">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="245.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwZ-Hs-LPh">
+                                        <rect key="frame" x="0.0" y="316.5" width="374" height="245.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="eP5-EC-TdY"/>
-                                    <constraint firstAttribute="height" constant="256" id="hfl-uj-a8X"/>
+                                    <constraint firstAttribute="width" constant="374" id="MQt-0N-HKC"/>
+                                    <constraint firstAttribute="height" constant="562" id="coU-dI-0rH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwZ-Hs-LPh">
-                                <rect key="frame" x="20" y="520" width="374" height="235"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="IMJ-gd-Lhv"/>
-                                    <constraint firstAttribute="height" constant="235" id="Rbm-tS-ZMg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xrg-Rt-CXe" appends="YES" id="bhd-MR-BjM"/>
+                                </connections>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSa-zo-ofC">
-                                <rect key="frame" x="94" y="806" width="227" height="56"/>
+                                <rect key="frame" x="94" y="806" width="226" height="53"/>
                                 <color key="backgroundColor" name="unemphasizedSelectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="766-eR-GBd"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="227" id="BbN-Sd-s4C"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="30"/>
                                 <state key="normal" title="Next Joke">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -52,9 +55,13 @@
                                     <action selector="nextJokeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oaB-d5-AhB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGC-bn-mrZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGC-bn-mrZ">
                                 <rect key="frame" x="342" y="44" width="52" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="5uz-lT-nTe"/>
+                                    <constraint firstAttribute="width" secondItem="bGC-bn-mrZ" secondAttribute="height" multiplier="1:1" id="M9B-B5-SWa"/>
+                                    <constraint firstAttribute="height" constant="52" id="RWC-hg-XkX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="52"/>
                                 <state key="normal" title="+">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -69,15 +76,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="LwZ-Hs-LPh" firstAttribute="top" secondItem="wvQ-rw-Kn2" secondAttribute="bottom" constant="71" id="0OU-hf-bvo"/>
-                            <constraint firstItem="gSa-zo-ofC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="3Ec-bl-raD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LwZ-Hs-LPh" secondAttribute="trailing" constant="20" id="JQt-qg-wAp"/>
-                            <constraint firstItem="wvQ-rw-Kn2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="M1K-MV-8lW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gSa-zo-ofC" secondAttribute="trailing" constant="93" id="X6g-8t-Y9E"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wvQ-rw-Kn2" secondAttribute="trailing" constant="20" id="aRJ-aL-Rxa"/>
-                            <constraint firstItem="LwZ-Hs-LPh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aSo-5d-QYC"/>
-                            <constraint firstItem="gSa-zo-ofC" firstAttribute="top" secondItem="LwZ-Hs-LPh" secondAttribute="bottom" constant="51" id="srN-ec-uEg"/>
-                            <constraint firstItem="gSa-zo-ofC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="vxJ-Yo-f4l"/>
+                            <constraint firstItem="abn-Pb-Jkp" firstAttribute="top" secondItem="bGC-bn-mrZ" secondAttribute="bottom" constant="97" id="51o-ig-gJJ"/>
+                            <constraint firstItem="gSa-zo-ofC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="AcV-oa-8b3"/>
+                            <constraint firstItem="abn-Pb-Jkp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hMh-HI-Sdh"/>
+                            <constraint firstItem="gSa-zo-ofC" firstAttribute="centerX" secondItem="abn-Pb-Jkp" secondAttribute="centerX" id="hmu-B0-vog"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="abn-Pb-Jkp" secondAttribute="trailing" constant="20" id="pT8-mV-w71"/>
+                            <constraint firstItem="bGC-bn-mrZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="scR-LO-F0s"/>
+                            <constraint firstItem="gSa-zo-ofC" firstAttribute="top" secondItem="abn-Pb-Jkp" secondAttribute="bottom" constant="51" id="sd9-84-Zgf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bGC-bn-mrZ" secondAttribute="trailing" constant="20" id="tAJ-Q4-1S9"/>
                         </constraints>
                     </view>
                     <connections>
@@ -87,6 +93,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="xrg-Rt-CXe">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="b1D-Pv-WSN"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
